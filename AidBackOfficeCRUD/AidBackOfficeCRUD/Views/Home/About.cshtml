@@ -1,0 +1,12 @@
+﻿
+@{
+    ViewData["Title"] = "About";
+}
+
+<h2></h2>
+<ul>
+    @foreach(var cl in User.Claims) {
+        <li><b>@cl.Type</b>: @cl.Value</li>
+    }
+</ul>
+
